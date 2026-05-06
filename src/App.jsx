@@ -7,6 +7,7 @@ import NetflixSettings from "./components/NetflixSettings"
 // import NetflixGenres from "./components/NetflixGenres"
 import {BrowserRouter, Routes, Route} from "react-router"
 import NetflixHome from "./components/NetflixHome"
+import TVShows from "./components/TVShows"
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/profile" element={<NetflixProfile/>}/>
         
         <Route path="/settings" element={<NetflixSettings/>}/>
+
+        <Route path="/tv-shows" element={< TVShows/>}/>
 
       </Routes>
       <NetflixFooter></NetflixFooter>

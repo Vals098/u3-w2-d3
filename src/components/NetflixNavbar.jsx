@@ -30,9 +30,7 @@ function NetflixNavbar() {
                 Home
               </Link>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  TV Shows
-                </a>
+               <Link to="/tv-shows"  className="nav-link">TV Shows</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
