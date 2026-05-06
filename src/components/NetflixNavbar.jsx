@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 function NetflixNavbar() {
   return (
     <div>
@@ -24,11 +26,9 @@ function NetflixNavbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   TV Shows
@@ -50,14 +50,10 @@ function NetflixNavbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#profile">
-                  My Profile
-                </a>
+                <Link to="/profile"  className="nav-link">My profile</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#settings">
-                  Settings
-                </a>
+                <Link to="/settings"  className="nav-link">Settings</Link>
               </li>
             </ul>
 
@@ -108,20 +104,14 @@ function NetflixNavbar() {
 
                 <ul className="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a
-                      className="dropdown-item"
-                      href="#profile"
-                    >
+                    <Link className="dropdown-item" to="/profile">
                       Profile
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className="dropdown-item"
-                      href="#settings"
-                    >
+                    <Link className="dropdown-item" to="/settings">
                       Settings
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
